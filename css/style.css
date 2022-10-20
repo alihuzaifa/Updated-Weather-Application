@@ -1,0 +1,52 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(../Images/logo.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+header{
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+.box{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.logo{
+    font-size: 40px;
+    font-weight: 500;
+}
+.special{
+    font-weight: 500;
+}
+.backward,.moon{
+    font-size: 30px !important;
+}
+.third{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tempreature{
+    border: 2px solid #ece5da;
+    height: 150px;
+    width: 150px;
+    border-radius: 50% !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cloud{
+    font-size: 35px !important;
+    color: #1b18f8 !important;
+}
+.windF,.cityF,.fog{
+    font-size: 35px !important;
+}
+#color-changer{
+    cursor: pointer;
+}

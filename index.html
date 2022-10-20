@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Application</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Bootstrap 5 -->
+    <link rel="stylesheet" href="Bootstrap/bootstrap.css">
+    <!-- Custom Css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="main-div">
+        <!-- Header -->
+        <header>
+            <nav class="navbar bg-light">
+                <div class="container-fluid">
+                    <span class="navbar-brand mb-0 logo fs-3 fs-sm-3 fs-md-2 fw-bold">Weather Application</span>
+                </div>
+            </nav>
+        </header>
+
+        <!-- Main -->
+
+        <div class="container mb-5 mt-3">
+            <!-- icons -->
+            <div class="row">
+                <div
+                    id="result-box" class="col-12 offset-0 col-sm-8 offset-sm-2 col-md-6 offset-md-3 col-lg-4 offset-lg-4 py-2 box bg-light text-dark rounded text-center border fs-4">
+                    <div class="first d-flex justify-content-center align-items-center p-1 border rounded-pill">
+                        <i class="fas fa-step-backward pe-4 backward"></i>
+                        <span class="fs-4 fw-bold d-block mx-3">Weather App</span>
+                        <i class="fas fa-moon ps-4 moon" id="color-changer"></i>
+                    </div>
+
+                    <!-- Search -->
+                    <div class="row">
+                        <div class="col-9">
+                            <div class="second">
+                                <input class="form-control me-2 rounded mt-3 mb-1 py-3 search-box" type="search"
+                                    placeholder="Search" aria-label="Search">
+                            </div>
+                        </div>
+                        <div class="col-3 py-4 px-0">
+                            <div class="btn btn-primary enter">Enter</div>
+                        </div>
+                    </div>
+
+                    <!-- Circle -->
+                    <div class="third my-1">
+                        <h1 class="tempreature text-primary"></h1>
+                    </div>
+
+                    <div class="container">
+                        <!-- City and cloud -->
+                        <div class="row mb-2">
+                            <div class="col border fs-3">
+                                <i class="fas fa-city cityF"></i>
+                                <span class="city fs-5 fs-sm-4 fs-md-3 special d-block">City</span>
+                            </div>
+                            <div class="col border">
+                                <i class="fas fa-cloud cloud"></i>
+                                <span class="weather-condition fs-5 fs-sm-4 fs-md-3 special d-block">13%</span>
+                            </div>
+                        </div>
+                        <!-- Visibility and wind -->
+                        <div class="row mb-2">
+                            <div class="col border fs-5 fs-sm-4 fs-md-3 special">
+                                <span class="d-block">Visibility</span>
+                                <span class="visible">13%</span>
+                            </div>
+                            <div class="col border fs-5 fs-sm-4 fs-md-3 special">
+                                <i class="fas fa-wind windF"></i>
+                                <span class="wind d-block">13</span>
+                            </div>
+                        </div>
+                        <!-- Min and Max -->
+                        <div class="row mb-2">
+                            <div class="col border fs-5 fs-sm-4 fs-md-3 special">
+                                <span class="d-block">Min</span>
+                                <span class="min">13%</span>
+                            </div>
+                            <div class="col border fs-5 fs-sm-4 fs-md-3 special">
+                                <span class="d-block">Max</span>
+                                <span class="max">13%</span>
+                            </div>
+                        </div>
+                        <!-- Pressure and humidity -->
+                        <div class="row mb-2">
+                            <div class="col border fs-5 fs-sm-4 fs-md-3 special">
+                                <span class="d-block">Pressure</span>
+                                <span class="pressure">13%</span>
+                            </div>
+                            <div class="col border fs-5 fs-sm-4 fs-md-3 special">
+                                <span class="d-block">Humidity</span>
+                                <span class="humidity">13%</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+
+
+
+    <!-- axios library -->
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <!-- Custom Javscript -->
+    <script src="app.js"></script>
+</body>
+
+</html>
